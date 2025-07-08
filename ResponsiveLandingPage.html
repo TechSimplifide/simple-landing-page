@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="ResponsiveLandingPage.css" />
+  </head>
+  <body>
+    <!-- <div class="mobile-menu-bar"> -->
+      <div class="main">
+        <div class="nav">
+          <h2>Logo</h2>
+          <div class="nav-part2">
+            <h5>Store</h5>
+            <h5>Courses</h5>
+            <h5>Carrer</h5>
+            <h5>Blog</h5>
+            <h5>Account</h5>
+            <button>Sign In</button>
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="content">
+        <div class="left">
+          <h1>Learn to <span>code </span>efficently and effectively.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            id natus odit. Exercitationem quos sint molestiae eos vero cum
+            omnis.
+          </p>
+          <button>Explore Now</button>
+        </div>
+        <div class="right">
+          <img src="./codingIllustrator.png" alt="img" />
+        </div>
+      </div>
+    </div>
+    <script>
+      let menuioc = document.querySelector("#menu-icon")
+     let mobileMenu = document.getElementsByClassName("nav-part2");
+     menuioc.addEventListener('click',()=>{
+      // mobileMenu.style.backgroundColor = 'orange'
+       mobileMenu.classList.toggle("show");
+     })
+    //  menuioc.addEventListener('click',()=>{
+    //   // mobileMenu.style.
+    //  })
+
+     
+    </script>
+  </body>
+</html>

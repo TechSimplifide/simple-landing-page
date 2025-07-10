@@ -11,23 +11,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="ResponsiveLandingPage.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- <div class="mobile-menu-bar"> -->
-      <div class="main">
-        <div class="nav">
-          <h2>Logo</h2>
-          <div class="nav-part2">
-            <h5>Store</h5>
-            <h5>Courses</h5>
-            <h5>Carrer</h5>
-            <h5>Blog</h5>
-            <h5>Account</h5>
-            <button>Sign In</button>
-            <i id="menu-icon" class="fa-solid fa-bars"></i>
-          </div>
-        <!-- </div> -->
+    <div class="main">
+      <div class="nav">
+        <h2><img src="./code.png" alt="logo"></h2>
+        <ul id="navLinks" class="nav-links">
+          <li>
+            <a href="#">Store</a>
+          </li>
+          <li>
+            <a href="#">Courses</a>
+          </li>
+          <li>
+            <a href="#">Carrer</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Account</a>
+          </li>
+
+          <button>Sign In</button>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
       </div>
       <div class="content">
         <div class="left">
@@ -45,17 +54,13 @@
       </div>
     </div>
     <script>
-      let menuioc = document.querySelector("#menu-icon")
-     let mobileMenu = document.getElementsByClassName("nav-part2");
-     menuioc.addEventListener('click',()=>{
-      // mobileMenu.style.backgroundColor = 'orange'
-       mobileMenu.classList.toggle("show");
-     })
-    //  menuioc.addEventListener('click',()=>{
-    //   // mobileMenu.style.
-    //  })
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
 
-     
+      hamburger.addEventListener("click", () => {
+        document.querySelector("button").style.display = "none";
+        navLinks.classList.toggle("show");
+      });
     </script>
   </body>
 </html>

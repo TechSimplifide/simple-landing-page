@@ -53,6 +53,10 @@ body {
   text-decoration: underline;
   color: blueviolet;
 }
+#sign-up-btn{
+  text-decoration: none;
+   color: rgba(59, 59, 59, 0.822);
+}
 .nav button {
   font-size: 1vw;
   padding: 0.7vw 1.4vw;

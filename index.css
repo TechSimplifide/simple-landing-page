@@ -37,12 +37,30 @@ body {
     rgb(220, 246, 220),
     rgb(223, 223, 255)
   );
-  padding: 0px 6px;
+  padding: 0px 5px;
   height: 3.2rem;
   border-radius: 0.6rem;
   border: 1px solid rgba(148, 148, 249, 0.588);
   display: flex;
 }
+.toggle-logo-container{
+  display: flex;
+  align-items: center;
+}
+.theme-toggler{
+  background: #6b6a6a;
+  margin-left: 1rem;
+  padding: 1px;
+  border: #beb4b2 solid none;
+  border-radius: 100%;
+  display: flex;
+}
+#toggel-img{
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav a {
   font-size: 1.3vw;
   font-weight: 900;

@@ -16,7 +16,10 @@
   <body>
     <div class="main">
       <div class="nav">
-        <h2><img src="./code.png" alt="logo"></h2>
+        <div class="toggle-logo-container">
+          <h2><img src="./code.png" alt="logo" /></h2>
+          <div class="theme-toggler"><img src="./night-mode.png" id="toggel-img"></div>
+        </div>
         <ul id="navLinks" class="nav-links">
           <li>
             <a href="#">Store</a>
@@ -34,14 +37,20 @@
             <a href="#">Account</a>
           </li>
 
-          <button><a id="sign-up-btn" href="http://127.0.0.1:5500/signup-loggin-form/index.html">Sign In</a></button>
+          <button>
+            <a
+              id="sign-up-btn"
+              href="http://127.0.0.1:5500/signup-loggin-form/index.html"
+              >Sign In</a
+            >
+          </button>
         </ul>
         <div class="hamburger" id="hamburger">&#9776;</div>
       </div>
       <div class="content">
         <div class="left">
-          <h1>Learn to <span>code </span>efficently and effectively.</h1>
-          <p>
+          <h1>Learn to <span>code </span>efficently by <span>building</span> projects!</h1>
+          <p id="quotes">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
             id natus odit. Exercitationem quos sint molestiae eos vero cum
             omnis.
